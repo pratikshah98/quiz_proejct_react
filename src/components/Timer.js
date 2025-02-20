@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Timer = ({ time, onTimeUp }) => {
     const [seconds, setSeconds] = useState(time);
@@ -12,7 +12,7 @@ const Timer = ({ time, onTimeUp }) => {
         return () => clearInterval(timer);
     }, [seconds, onTimeUp]);
 
-    return <h3>Time Left: {seconds}s</h3>;
+    return <h3 className="text-red-500">Time Left: {seconds}s</h3>;
 };
 
 export default Timer;
