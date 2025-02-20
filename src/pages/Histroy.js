@@ -14,7 +14,7 @@ const History = () => {
             <ul>
                 {history.map((attempt, index) => (
                     <li key={index}>
-                        Score: {attempt.score}/{attempt.totalQuestions} - {new Date(attempt.timestamp).toLocaleString()}
+                       New Score: {attempt.score}/{attempt.totalQuestions} - {new Date(attempt.timestamp).toLocaleString()}
                     </li>
                 ))}
             </ul>
